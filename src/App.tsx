@@ -4,13 +4,9 @@ import {
   Text,
   Image,
   Heading,
-  Link,
-  Button,
   Flex
 } from '@chakra-ui/react'
-import { LinkButton } from './components/LinkButton'
-import { FaChessBishop, FaGithubAlt, FaInstagram, FaYoutube } from 'react-icons/fa'
-
+import { ListLink } from './components/ListLinks'
 
 export default function App() {
   return (
@@ -45,12 +41,7 @@ export default function App() {
             </Text>
           </VStack>
         </VStack>
-        <VStack spacing={4} color='white' >
-          <LinkButton icon={<FaYoutube />} name='YOUTUBE' href='https://youtube.com' />
-          <LinkButton icon={<FaInstagram />} name='INSTAGRAM' href='https://youtube.com' />
-          <LinkButton icon={<FaChessBishop />} name='WEBSITE' href='https://youtube.com' />
-          <LinkButton icon={<FaGithubAlt />} name='GITHUB' href='https://youtube.com' />
-        </VStack>
+        <ListLink />
         <span>Created by João Gustavo "Bishop"</span>
       </VStack>
     </Flex>
