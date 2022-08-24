@@ -1,5 +1,4 @@
 import { Button, Link } from "@chakra-ui/react";
-import {} from 'react-icons/ri'
 
 interface LinkProps {
   href: string;
